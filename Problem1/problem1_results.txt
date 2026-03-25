@@ -1,0 +1,246 @@
+─────────────────────────────────────────────────────────────────────────────────────
+TASK 2 RESULTS — Avg Cosine Similarity on IITJ Word Pairs
+─────────────────────────────────────────────────────────────────────────────────────
+Embed Dim         Window            Neg Samples       CBOW Scratch      SG Scratch        CBOW Gensim       SG Gensim       
+─────────────────────────────────────────────────────────────────────────────────────
+50                2                 5                 0.7655            0.6875            0.4779            0.653           
+50                2                 10                0.7704            0.6806            0.4501            0.6584          
+50                5                 5                 0.8708            0.7325            0.3745            0.7062          
+50                5                 10                0.8524            0.7422            0.4086            0.7345          
+100               2                 5                 0.7497            0.6337            0.3721            0.508           
+100               2                 10                0.7359            0.6191            0.3436            0.5331          
+100               5                 5                 0.84              0.6589            0.3039            0.5544          
+100               5                 10                0.8449            0.6522            0.2922            0.5784          
+200               2                 5                 0.7319            0.5903            0.3225            0.4105          
+200               2                 10                0.7101            0.5942            0.3145            0.4342          
+200               5                 5                 0.8204            0.6133            0.2687            0.4401          
+200               5                 10                0.8284            0.6061            0.2663            0.4714          
+─────────────────────────────────────────────────────────────────────────────────────
+
+Results saved to: training_results.csv
+Models saved to : models/
+
+
+============================================================
+TASK 3: SEMANTIC ANALYSIS
+============================================================
+
+============================================================
+  Top-5 Nearest Neighbors — CBOW (From Scratch)
+============================================================
+
+  'research':
+    1. development          cosine similarity: 0.9463
+    2. sciences             cosine similarity: 0.9440
+    3. center               cosine similarity: 0.9405
+    4. education            cosine similarity: 0.9285
+    5. project              cosine similarity: 0.9280
+
+  'student':
+    1. new                  cosine similarity: 0.9620
+    2. various              cosine similarity: 0.9574
+    3. campus               cosine similarity: 0.9572
+    4. activities           cosine similarity: 0.9507
+    5. society              cosine similarity: 0.9505
+
+  'phd':
+    1. university           cosine similarity: 0.9177
+    2. academic             cosine similarity: 0.9025
+    3. programs             cosine similarity: 0.9016
+    4. program              cosine similarity: 0.8973
+    5. school               cosine similarity: 0.8962
+
+  'exam':
+    1. technical            cosine similarity: 0.8214
+    2. shortlisted          cosine similarity: 0.8085
+    3. post                 cosine similarity: 0.7958
+    4. candidates           cosine similarity: 0.7923
+    5. code                 cosine similarity: 0.7918
+
+============================================================
+  Top-5 Nearest Neighbors — Skip-gram (From Scratch)
+============================================================
+
+  'research':
+    1. csir                 cosine similarity: 0.7761
+    2. researchers          cosine similarity: 0.7759
+    3. collaboration        cosine similarity: 0.7754
+    4. areas                cosine similarity: 0.7676
+    5. scientist            cosine similarity: 0.7657
+
+  'student':
+    1. students             cosine similarity: 0.7707
+    2. career               cosine similarity: 0.7499
+    3. elected              cosine similarity: 0.7476
+    4. graduating           cosine similarity: 0.7434
+    5. gymkhana             cosine similarity: 0.7326
+
+  'phd':
+    1. scholar              cosine similarity: 0.8049
+    2. sola                 cosine similarity: 0.7945
+    3. msc                  cosine similarity: 0.7929
+    4. doctoral             cosine similarity: 0.7807
+    5. scholars             cosine similarity: 0.7688
+
+  'exam':
+    1. appeared             cosine similarity: 0.9126
+    2. tentative            cosine similarity: 0.9096
+    3. updates              cosine similarity: 0.9072
+    4. syllabus             cosine similarity: 0.8988
+    5. interviews           cosine similarity: 0.8920
+
+============================================================
+  Top-5 Nearest Neighbors — CBOW (Gensim)
+============================================================
+
+  'research':
+    1. worked               cosine similarity: 0.5478
+    2. researchers          cosine similarity: 0.5366
+    3. outreach             cosine similarity: 0.5225
+    4. collaborative        cosine similarity: 0.4970
+    5. presented            cosine similarity: 0.4862
+
+  'student':
+    1. students             cosine similarity: 0.6505
+    2. career               cosine similarity: 0.5549
+    3. internship           cosine similarity: 0.5413
+    4. professional         cosine similarity: 0.4868
+    5. acac                 cosine similarity: 0.4836
+
+  'phd':
+    1. msc                  cosine similarity: 0.6657
+    2. pursuing             cosine similarity: 0.5958
+    3. mmt                  cosine similarity: 0.5805
+    4. masters              cosine similarity: 0.5765
+    5. visvesvaraya         cosine similarity: 0.5687
+
+  'exam':
+    1. exams                cosine similarity: 0.7626
+    2. appeared             cosine similarity: 0.7440
+    3. examination          cosine similarity: 0.7420
+    4. interview            cosine similarity: 0.7383
+    5. examinations         cosine similarity: 0.7264
+
+============================================================
+  Top-5 Nearest Neighbors — Skip-gram (Gensim)
+============================================================
+
+  'research':
+    1. undergraduates       cosine similarity: 0.6553
+    2. strengthened         cosine similarity: 0.6546
+    3. arabia               cosine similarity: 0.6515
+    4. jsps                 cosine similarity: 0.6480
+    5. magma                cosine similarity: 0.6470
+
+  'student':
+    1. students             cosine similarity: 0.7473
+    2. accolades            cosine similarity: 0.6298
+    3. gymkhana             cosine similarity: 0.6197
+    4. lalani               cosine similarity: 0.6131
+    5. ara                  cosine similarity: 0.6113
+
+  'phd':
+    1. msc                  cosine similarity: 0.7221
+    2. namanbaghel          cosine similarity: 0.6694
+    3. mmt                  cosine similarity: 0.6684
+    4. hanan                cosine similarity: 0.6637
+    5. badged               cosine similarity: 0.6608
+
+  'exam':
+    1. tba                  cosine similarity: 0.7596
+    2. exams                cosine similarity: 0.7450
+    3. examination          cosine similarity: 0.7418
+    4. candida              cosine similarity: 0.7148
+    5. interview            cosine similarity: 0.7069
+
+============================================================
+  Analogy Experiments — CBOW (From Scratch)
+============================================================
+
+  UG : BTech :: PG : ?
+    Skipped — one or more words not in vocabulary
+
+  professor : research :: student : ?
+    1. organizations        cosine similarity: 0.4736
+    2. students             cosine similarity: 0.4598
+    3. year                 cosine similarity: 0.4438
+
+  mechanical : engineering :: chemistry : ?
+    1. physics              cosine similarity: 0.9421
+    2. computer             cosine similarity: 0.9337
+    3. mathematics          cosine similarity: 0.9328
+
+============================================================
+  Analogy Experiments — Skip-gram (From Scratch)
+============================================================
+
+  UG : BTech :: PG : ?
+    Skipped — one or more words not in vocabulary
+
+  professor : research :: student : ?
+    1. activities           cosine similarity: 0.5554
+    2. curricular           cosine similarity: 0.5286
+    3. career               cosine similarity: 0.5247
+
+  mechanical : engineering :: chemistry : ?
+    1. bioengineering       cosine similarity: 0.7574
+    2. chemical             cosine similarity: 0.7429
+    3. physics              cosine similarity: 0.7411
+
+============================================================
+  Analogy Experiments — CBOW (Gensim)
+============================================================
+
+  UG : BTech :: PG : ?
+    Skipped — one or more words not in vocabulary
+
+  professor : research :: student : ?
+    1. career               cosine similarity: 0.5406
+    2. professional         cosine similarity: 0.5187
+    3. students             cosine similarity: 0.4992
+
+  mechanical : engineering :: chemistry : ?
+    1. biophysics           cosine similarity: 0.4427
+    2. specializing         cosine similarity: 0.4387
+    3. hons                 cosine similarity: 0.4340
+
+============================================================
+  Analogy Experiments — Skip-gram (Gensim)
+============================================================
+
+  UG : BTech :: PG : ?
+    Skipped — one or more words not in vocabulary
+
+  professor : research :: student : ?
+    1. curricular           cosine similarity: 0.5703
+    2. extracurricular      cosine similarity: 0.5476
+    3. propel               cosine similarity: 0.5422
+
+  mechanical : engineering :: chemistry : ?
+    1. bioinorganic         cosine similarity: 0.6369
+    2. bbl1010              cosine similarity: 0.6342
+    3. zoology              cosine similarity: 0.6301
+
+
+============================================================
+TASK 4: VISUALIZATION
+============================================================
+
+Generating PCA visualizations...
+  CBOW (Scratch) — Variance explained: PC1=66.39%, PC2=14.23%
+  Saved: /home/omsharma07/BFA_DQN/NLU/pca_cbow_scratch.png
+  Skip-gram (Scratch) — Variance explained: PC1=18.04%, PC2=12.85%
+  Saved: /home/omsharma07/BFA_DQN/NLU/pca_sg_scratch.png
+  CBOW (Gensim) — Variance explained: PC1=13.60%, PC2=11.42%
+  Saved: /home/omsharma07/BFA_DQN/NLU/pca_cbow_gensim.png
+  Skip-gram (Gensim) — Variance explained: PC1=12.82%, PC2=9.99%
+  Saved: /home/omsharma07/BFA_DQN/NLU/pca_sg_gensim.png
+
+Generating t-SNE visualizations...
+  Saved: /home/omsharma07/BFA_DQN/NLU/tsne_cbow_scratch.png
+  Saved: /home/omsharma07/BFA_DQN/NLU/tsne_sg_scratch.png
+  Saved: /home/omsharma07/BFA_DQN/NLU/tsne_cbow_gensim.png
+  Saved: /home/omsharma07/BFA_DQN/NLU/tsne_sg_gensim.png
+
+All tasks complete.
+Outputs: training_results.csv, models/, pca_*.png, tsne_*.png
