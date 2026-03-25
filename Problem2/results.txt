@@ -1,0 +1,152 @@
+omsharma07@user:~/BFA_DQN/NLU/Problem2$ python task2_evaluation.py 
+Training set size: 1000 names
+
+Model                   Total   Unique    Novelty Rate    Diversity
+──────────────────────────────────────────────────────────────────────
+Vanilla RNN               200      188         93.50%      94.00%
+BLSTM                     200      168         30.50%      84.00%
+RNN+Attention             200      186        100.00%      93.00%
+──────────────────────────────────────────────────────────────────────
+
+Best Novelty Rate : RNN+Attention (100.00%)
+Best Diversity    : Vanilla RNN (94.00%)
+
+Done.
+omsharma07@user:~/BFA_DQN/NLU/Problem2$ python task3_qualitative.py 
+
+============================================================
+  Vanilla RNN
+============================================================
+
+  Representative Samples (20 of 200):
+     1. Isha Agary
+     2. Nagesh Ahuja
+     3. Revansha Dutta
+     4. Akshara Vyas
+     5. Trilok Shukla
+     6. Arun Chopra
+     7. Anirudh Rao
+     8. Papiya Dave
+     9. Sumatlo Chopra
+    10. Adia Chowdhury
+    11. Jayesh Dave
+    12. Mani Rao
+    13. Abhay Agarwal
+    14. Abhishek Shekhawat
+    15. Irish Chopra
+    16. Abhay Chopra
+    17. Nagesh Agarud
+    18. Sunal Chauhan
+    19. Abhay Nair
+    20. Aarohi Shekhe
+
+  Realism Rate (heuristic): 100.00%
+  (Names passing length, alphabetic+space, non-repetition checks)
+
+  Failure Modes:
+    too_short       :    0 (0.0%)
+    too_long        :    0 (0.0%)
+    repetition      :    0 (0.0%)
+    bad_chars       :    0 (0.0%)
+    duplicates      :   10 (5.0%)
+
+  Name Length: min=8, max=20, avg=12.2
+
+  Most Frequently Generated:
+    'Abhay More' — 3 times
+    'Abhay Dutta' — 3 times
+    'Nagesh Ahuja' — 2 times
+    'Janesh Chopra' — 2 times
+    'Gaurang Rawat' — 2 times
+
+============================================================
+  BLSTM
+============================================================
+
+  Representative Samples (20 of 200):
+     1. Vanya Kalerjee
+     2. Yuvraj Trivedi
+     3. Hari Negi
+     4. Varun Goel
+     5. Pari Ghosh
+     6. Moumita Kamath
+     7. Trilokesh Rawat
+     8. Uma Sarkar
+     9. Juhi Gupta
+    10. Indrani Kundu
+    11. Revathi Mohanty
+    12. Keshav Wadhawan
+    13. Bhuvan Jain
+    14. Parth Shekhawat
+    15. Chithra Rawat
+    16. Deepik Sood
+    17. Juhi Gupta
+    18. Yash Sood
+    19. Aakash Saini
+    20. Aadhya Ghosh
+
+  Realism Rate (heuristic): 100.00%
+  (Names passing length, alphabetic+space, non-repetition checks)
+
+  Failure Modes:
+    too_short       :    0 (0.0%)
+    too_long        :    0 (0.0%)
+    repetition      :    0 (0.0%)
+    bad_chars       :    0 (0.0%)
+    duplicates      :   22 (11.0%)
+
+  Name Length: min=7, max=20, avg=12.5
+
+  Most Frequently Generated:
+    'Yuvraj Trivedi' — 4 times
+    'Juhi Gupta' — 3 times
+    'Chithra Rawat' — 3 times
+    'Priya Yadav' — 3 times
+    'Vihaan Pal' — 3 times
+
+============================================================
+  RNN+Attention
+============================================================
+
+  Representative Samples (20 of 200):
+     1. Yukta Bankit R
+     2. Pagve
+     3. Barkam Noik N Y
+     4. Advi Chadmish Tri Pg
+     5. Advi Sri Modbit Ichr
+     6. Piyus
+     7. Ezut Pgyjyy
+     8. Sha Pgyub Tri Tri Mr
+     9. Yukta
+    10. Falgenjit Bankit Tri
+    11. Njit Tri Hadbax Bank
+    12. Fali Droyx Ncilmit
+    13. Ilut Nogut Rao Modi
+    14. Radit R
+    15. Rimi Sri Muklaxvenu
+    16. Nithug Nog
+    17. Gaut
+    18. Izumug
+    19. Advi Tri N
+    20. Pagve
+
+  Realism Rate (heuristic): 100.00%
+  (Names passing length, alphabetic+space, non-repetition checks)
+
+  Failure Modes:
+    too_short       :    0 (0.0%)
+    too_long        :    0 (0.0%)
+    repetition      :    0 (0.0%)
+    bad_chars       :    0 (0.0%)
+    duplicates      :    7 (3.5%)
+
+  Name Length: min=2, max=20, avg=13.1
+
+  Most Frequently Generated:
+    'Pagve' — 7 times
+    'Mithug' — 4 times
+    'Yukta' — 2 times
+    'Jyoi N' — 2 times
+    'Ilgut' — 2 times
+
+Done.
